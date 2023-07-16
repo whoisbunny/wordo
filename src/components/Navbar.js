@@ -1,46 +1,35 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+
+import { SiGithub, SiLinkedin } from "react-icons/si";
 // import PropType from 'prop-types';
 
 
 export default function Navbar(props) {
   return (
-    <nav className= {` navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} `}>
-      <div className="container-fluid">
-        {/* <Link to="/" className="navbar-brand">
-          {props.title}
-        </Link> */}
-        <a href="#" className="navbar-brand">
-          {props.title}
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a href="#" className="nav-link active" aria-current="page" >
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              {/* <a className="nav-link" href="#">
-                About
-              </a> */}
-            </li>
-          </ul>
-          <div className={`form-check form-switch text-${props.mode ==='light'?'dark':'light'}`}>
-  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onClick={props.toggleMode}  />
-  <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Enable {props.mode ==='light'?'dark':'light'} Mode</label>
-</div>
+    <nav
+      className={` navbar navbar-expand-lg   sticky-top  border-bottom border-2     text-light `}
+      style={{
+        background: "#042743",
+        borderRadius: " 0px 0px 0px 50rem",
+      }}
+    >
+      <div className="container-fluid d-flex justify-content-between px-5">
+        <div class="p-2 px-4 mx-4 fs-5 ">{props.title}</div>
+        <div class="d-flex gap-3  ">
+          <div class="p-2">
+            <a href="https://github.com/whoisbunny" className="nav-link">
+              <SiGithub />
+            </a>
+          </div>
+          <div class="vr"></div>
+          <div class="p-2">
+            <a
+              href="https://www.linkedin.com/in/kamlesh-rathod-0a7758215/"
+              className="nav-link"
+            >
+              <SiLinkedin />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
