@@ -18,7 +18,7 @@ export default function Navbar(props) {
         <div class="d-flex gap-3  ">
           <div class="p-2">
             <a
-              href="https://https://github.com/whoisbunny/wordo"
+              href="https://github.com/whoisbunny/wordo"
               className="nav-link"
             >
               <SiGithub />
