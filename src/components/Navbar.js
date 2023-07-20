@@ -17,17 +17,14 @@ export default function Navbar(props) {
         <div class="p-2 px-4 mx-4 fs-5 ">{props.title}</div>
         <div class="d-flex gap-3  ">
           <div class="p-2">
-            <a
-              href="https://github.com/whoisbunny/wordo"
-              className="nav-link"
-            >
+            <a href="https://github.com/whoisbunny/wordo" className="nav-link">
               <SiGithub />
             </a>
           </div>
           <div class="vr"></div>
           <div class="p-2">
             <a
-              href="https://www.linkedin.com/in/kamlesh-rathod-0a7758215/"
+              href="https://www.linkedin.com/in/whoisbunny/"
               className="nav-link"
             >
               <SiLinkedin />
