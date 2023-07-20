@@ -17,7 +17,10 @@ export default function Navbar(props) {
         <div class="p-2 px-4 mx-4 fs-5 ">{props.title}</div>
         <div class="d-flex gap-3  ">
           <div class="p-2">
-            <a href="https://github.com/whoisbunny" className="nav-link">
+            <a
+              href="https://https://github.com/whoisbunny/wordo"
+              className="nav-link"
+            >
               <SiGithub />
             </a>
           </div>
